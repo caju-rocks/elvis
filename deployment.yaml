@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: elvis
+  name: elvis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elvis
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: elvis
+    spec:
+      containers:
+      - image: caju/elvis:latest
+        name: elvis
+        resources: {}
+status: {}
