@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 messages = [
-    "Elvis has left the building.",  #
+    "Elvis has left the building.",
     "Elvis has left the oven on.",
     "Elvis has two left feet.",
     "Elvis was left out in the cold.",

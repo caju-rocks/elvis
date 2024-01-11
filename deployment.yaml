@@ -2,7 +2,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: elvis
   name: elvis
@@ -13,12 +12,9 @@ spec:
       app: elvis
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: elvis
     spec:
       containers:
-      - image: caju/elvis:latest
+      - image: ghcr.io/caju-rocks/elvis:latest
         name: elvis
-        resources: {}
-status: {}
