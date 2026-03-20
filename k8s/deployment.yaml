@@ -4,6 +4,7 @@ kind: Deployment
 metadata:
   labels:
     app: elvis
+    environment: dev
   name: elvis
 spec:
   replicas: 1
@@ -14,7 +15,9 @@ spec:
     metadata:
       labels:
         app: elvis
+        version: 0.0.2
     spec:
       containers:
-      - image: ghcr.io/caju-rocks/elvis:latest
+      - image: ghcr.io/caju-rocks/elvis:0.0.2
+        imagePullPolicy: IfNotPresent
         name: elvis
